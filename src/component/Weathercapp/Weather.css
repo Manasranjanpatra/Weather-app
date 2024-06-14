@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 78vh;
+  width: 30rem;
+  background-color: rgb(34, 84, 211);
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 15px;
+}
+.subcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  gap: 14px;
+}
+.inputcity {
+  display: flex;
+  height: 8vh;
+  width: 22rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background: rgb(242, 236, 224);
+  border-radius: 20rem;
+  padding-left: 1.2rem;
+}
+.searchicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 8vh;
+  background: rgb(242, 236, 224);
+  border-radius: 20rem;
+  cursor: pointer;
+}
+.weathertemp {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+}
+.weaqtherlocation {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+}
+.weatherimage {
+  display: flex;
+  justify-content: center;
+}
+.datacontainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  margin-top: 4rem;
+}
+.element {
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+.data {
+  font-size: 1rem;
+}
+.text {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.icon {
+  padding-top: 0.3rem;
+}
+.p {
+  text-transform: capitalize;
+  color: red;
+  text-align: center;
+}
+@media (max-width: 605px) {
+  .container {
+    height: 100vh;
+    width: 27rem;
+    margin-top: 0px;
+  }
+  .inputcity {
+    display: flex;
+    height: 3.6rem;
+    width: 20rem;
+  }
+  .searchicon {
+    height: 3.6rem;
+  }
+  .datacontainer {
+    margin-top: 8rem;
+  }
+  .weatherimage {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+  }
+  .inputcity {
+    height: 3.5rem;
+    width: 19rem;
+  }
+  .searchicon {
+    height: 3.5rem;
+  }
+  .weatherimage {
+    margin-top: 3rem;
+  }
+  .weatherimage img {
+    max-width: 60%;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+  }
+  .inputcity {
+    height: 3.5rem;
+    width: 16rem;
+  }
+  .searchicon {
+    height: 3.5rem;
+  }
+  .weatherimage img {
+    max-width: 60%;
+  }
+}
